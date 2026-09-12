@@ -1,7 +1,7 @@
 <img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
 
 # ThengaKola - Thenga Undo (തേങ്ങാ കൊല) 🎯
-> *"തേങ്ങ വീഴും മുമ്പേ, കൊല അറിയാം"* (Know the murder before the coconut falls!)
+> *"തേങ്ങ വീഴും മുമ്പേ, കൊല അറിയാം"* (Know the Thenga before the Kola!)
 
 ## Basic Details
 ### Team Name: WannaBeInUndoUniverse
@@ -13,8 +13,18 @@
 ThengaKola is an AI-powered, mock Kerala government public safety hazard portal that detects individual coconuts on palm trees and calculates whether they possess enough ballistic kinetic energy to fracture a human skull. Complete with real YOLOv11 computer vision, Kerala district hazard radars, historical coconut crime registries, and the citizen self-reporting portal **"Thenga Undo?" (തേങ്ങാ ഉണ്ടോ?)**.
 
 ### The Problem (that doesn't exist)
-In God's Own Country (Kerala), millions of citizens risk severe existential and cranial distress every day while enjoying their afternoon *chaaya* and siestas beneath towering 18-meter coconut palms. While gravity and ripening husks conspire overhead in silence, the state lacks a deadpan bureaucratic registry to hold loitering, premeditated coconuts accountable before they execute high-velocity assaults on human heads and Ambassador car roofs.
 
+**God’s Own Country has a very special problem.**
+
+Kerala, the *“land of coconuts,”* is facing a coconut shortage. And the few that remain? **Avaru oru rakshayum illa.** 🥥
+
+While people enjoy their **chaaya** or **uchayurakkam**, there’s always one question:
+
+> **“Innu thenga thalayil veezhumo?”**
+
+Cars, rooftops, and unsuspecting humans are constantly under attack from these **high-altitude husked missiles**.
+
+Because in Kerala, you never know **eppo thenga veezhum!**
 ### The Solution (that nobody asked for)
 A state-of-the-art Two-Stage Neural Threat Detector & Public Grievance Matrix! 
 Users simply take a photo of any suspicious tree bunch. Our system localizes every coconut, crops and classifies ripeness, computes terminal drop velocity ($v = \sqrt{2gh}$) and cranial impact Joules ($KE = \frac{1}{2}mv^2$), assigns a Threat Level (*Low*, *Moderate*, *Lethal*, or *Code Red*), and pre-fills an official police FIR or downloadable **Tree Safety Clearance Certificate**. And for citizens without a camera, the **"Thenga Undo?"** census lets them self-report their backyard coconut headcount directly into the Kerala Hazard Radar!
