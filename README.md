@@ -1,7 +1,7 @@
 <img width="1280" height="640" alt="git (1)" src="https://github.com/user-attachments/assets/8920b256-2ba8-4988-b824-5351134eb4bd" />
 
 # ThengaKola - Thenga Undo (തേങ്ങാ കൊല) 🎯
-> *"തേങ്ങ വീഴും മുമ്പേ, കൊല അറിയാം"* (Know the murder before the coconut falls!)
+> *"തേങ്ങ വീഴും മുമ്പേ, കൊല അറിയാം"* (Know the Thenga before the Kola!)
 
 ## Basic Details
 ### Team Name: WannaBeInUndoUniverse
@@ -18,10 +18,12 @@ ThengaKola is an AI-powered, mock Kerala government public safety hazard portal 
 Kerala, the *“land of coconuts,”* is facing a coconut shortage. And the few that remain? **Avaru oru rakshayum illa.** 🥥
 
 While people enjoy their **chaaya** or **uchayurakkam**, there’s always one question:
+
 > **“Innu thenga thalayil veezhumo?”**
 
-Cars, rooftops, and unsuspecting humans are constantly under attack from these **high-altitude husked missiles**. Because in Kerala, you never know **eppo thenga veezhum!**
+Cars, rooftops, and unsuspecting humans are constantly under attack from these **high-altitude husked missiles**.
 
+Because in Kerala, you never know **eppo thenga veezhum!**
 ### The Solution (that nobody asked for)
 A state-of-the-art Two-Stage Neural Threat Detector & Public Grievance Matrix! 
 Users simply take a photo of any suspicious tree bunch. Our system localizes every coconut, crops and classifies ripeness, computes terminal drop velocity ($v = \sqrt{2gh}$) and cranial impact Joules ($KE = \frac{1}{2}mv^2$), assigns a Threat Level (*Low*, *Moderate*, *Lethal*, or *Code Red*), and pre-fills an official police FIR or downloadable **Tree Safety Clearance Certificate**. And for citizens without a camera, the **"Thenga Undo?"** census lets them self-report their backyard coconut headcount directly into the Kerala Hazard Radar!
@@ -109,21 +111,24 @@ Open your browser and navigate to: **`http://localhost:3000`**
 ## Project Documentation
 
 ### Screenshots
-*(Add your screenshots here)*
 
-![Screenshot 1 - Home Screen](Add screenshot 1 here)
-*Homepage with 100vh layout, live surveillance counters, and official department mascot.*
+![Screenshot 1 - Home Screen]
+<img width="1870" height="912" alt="image" src="https://github.com/user-attachments/assets/23344832-32c0-44fb-8abd-bbf7e3fac1dc" />
 
-![Screenshot 2 - Optical Scanner & Canvas HUD](Add screenshot 2 here)
-*Tactical bunch scanner displaying annotated bounding brackets, lethality scores, and cranial impact Joules.*
+![Screenshot 2 - Optical Scanner & Canvas HUD]
+<img width="1882" height="842" alt="image" src="https://github.com/user-attachments/assets/ce01f30f-6039-4f1d-b4ab-faae915497fc" />
 
-![Screenshot 3 - Thenga Undo & Kerala Radar](Add screenshot 3 here)
-*Thenga Undo self-reporting portal with district hazard telemetry.*
+![Screenshot 3 - Thenga Undo & Kerala Radar]
+<img width="1865" height="838" alt="image" src="https://github.com/user-attachments/assets/bb426bc1-d931-43ef-bf50-b6cbc3d54234" />
 
-![Screenshot 4 - Most Wanted & Crime Case Files](Add screenshot 4 here)
+![Screenshot 4 - Most Wanted & Crime Case Files]
+<img width="1860" height="787" alt="image" src="https://github.com/user-attachments/assets/80e551e4-e15c-4151-891e-0f40974bebb4" />
+
 *Kerala's Most Wanted Coconut mugshots and historical incident registry.*
 
-![Screenshot 5 - Official Safety Clearance Certificate](Add screenshot 5 here)
+![Screenshot 5 - Official Safety Clearance Certificate]
+<img width="735" height="630" alt="image" src="https://github.com/user-attachments/assets/83558d50-a86c-465f-b8c8-de32ea0f7689" />
+
 *Single-page official safety clearance certificate signed by the Chief Coconut Commissioner.*
 
 ---
