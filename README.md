@@ -112,21 +112,24 @@ Open your browser and navigate to: **`http://localhost:3000`**
 ## Project Documentation
 
 ### Screenshots
-*(Add your screenshots here)*
 
-![Screenshot 1 - Home Screen](Add screenshot 1 here)
-*Homepage with 100vh layout, live surveillance counters, and official department mascot.*
+![Screenshot 1 - Home Screen]
+<img width="1870" height="912" alt="image" src="https://github.com/user-attachments/assets/23344832-32c0-44fb-8abd-bbf7e3fac1dc" />
 
-![Screenshot 2 - Optical Scanner & Canvas HUD](Add screenshot 2 here)
-*Tactical bunch scanner displaying annotated bounding brackets, lethality scores, and cranial impact Joules.*
+![Screenshot 2 - Optical Scanner & Canvas HUD]
+<img width="1882" height="842" alt="image" src="https://github.com/user-attachments/assets/ce01f30f-6039-4f1d-b4ab-faae915497fc" />
 
-![Screenshot 3 - Thenga Undo & Kerala Radar](Add screenshot 3 here)
-*Thenga Undo self-reporting portal with district hazard telemetry.*
+![Screenshot 3 - Thenga Undo & Kerala Radar]
+<img width="1865" height="838" alt="image" src="https://github.com/user-attachments/assets/bb426bc1-d931-43ef-bf50-b6cbc3d54234" />
 
-![Screenshot 4 - Most Wanted & Crime Case Files](Add screenshot 4 here)
+![Screenshot 4 - Most Wanted & Crime Case Files]
+<img width="1860" height="787" alt="image" src="https://github.com/user-attachments/assets/80e551e4-e15c-4151-891e-0f40974bebb4" />
+
 *Kerala's Most Wanted Coconut mugshots and historical incident registry.*
 
-![Screenshot 5 - Official Safety Clearance Certificate](Add screenshot 5 here)
+![Screenshot 5 - Official Safety Clearance Certificate]
+<img width="735" height="630" alt="image" src="https://github.com/user-attachments/assets/83558d50-a86c-465f-b8c8-de32ea0f7689" />
+
 *Single-page official safety clearance certificate signed by the Chief Coconut Commissioner.*
 
 ---
