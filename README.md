@@ -13,7 +13,14 @@
 ThengaKola is an AI-powered, mock Kerala government public safety hazard portal that detects individual coconuts on palm trees and calculates whether they possess enough ballistic kinetic energy to fracture a human skull. Complete with real YOLOv11 computer vision, Kerala district hazard radars, historical coconut crime registries, and the citizen self-reporting portal **"Thenga Undo?" (തേങ്ങാ ഉണ്ടോ?)**.
 
 ### The Problem (that doesn't exist)
-In God's Own Country (Kerala), millions of citizens risk severe existential and cranial distress every day while enjoying their afternoon *chaaya* and siestas beneath towering 18-meter coconut palms. While gravity and ripening husks conspire overhead in silence, the state lacks a deadpan bureaucratic registry to hold loitering, premeditated coconuts accountable before they execute high-velocity assaults on human heads and Ambassador car roofs.
+**God’s Own Country has a very special problem.**
+
+Kerala, the *“land of coconuts,”* is facing a coconut shortage. And the few that remain? **Avaru oru rakshayum illa.** 🥥
+
+While people enjoy their **chaaya** or **uchayurakkam**, there’s always one question:
+> **“Innu thenga thalayil veezhumo?”**
+
+Cars, rooftops, and unsuspecting humans are constantly under attack from these **high-altitude husked missiles**. Because in Kerala, you never know **eppo thenga veezhum!**
 
 ### The Solution (that nobody asked for)
 A state-of-the-art Two-Stage Neural Threat Detector & Public Grievance Matrix! 
