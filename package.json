@@ -1,0 +1,13 @@
+{
+  "name": "thenga-kola",
+  "version": "1.0.0",
+  "description": "Thenga Kola - Kerala Coconut Lethality Detection Portal",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["roboflow", "coconut-detection", "yolov11"],
+  "author": "Thenga Kola Department",
+  "license": "ISC"
+}

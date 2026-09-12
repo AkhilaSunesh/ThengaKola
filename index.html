@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thenga Kola (തേങ്ങാ കൊല) - തേങ്ങ വീഴും മുമ്പേ, കൊല അറിയാം</title>
+  <meta name="description" content="Thenga Kola - Kerala Coconut Lethality Assessment. തേങ്ങ വീഴും മുമ്പേ, കൊല അറിയാം!">
+  <!-- User specified Favicon -->
+  <link rel="icon" type="image/png" href="images/Cool Sunglasses Coconut Badge.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="app-container">
+
+    <!-- Top Alert Ticker -->
+    <div class="top-ticker">
+      <div>
+        <span class="ticker-pulse"></span>
+        <strong>LIVE ALERT:</strong> Monitoring active palm clusters across Kerala for lethal coconut trajectories.
+      </div>
+      <div>
+        GOVT REG: TKD-2026-KL
+      </div>
+    </div>
+
+    <!-- Official Header with Clickable Logo to return Home -->
+    <header class="official-header">
+      <div class="header-main">
+        <a class="brand-badge" id="brandLogoHomeBtn" title="Return to Home">
+          <img src="images/Cool Sunglasses Coconut Badge.png" alt="Thenga Kola Badge" class="brand-logo-img">
+          <div class="brand-titles">
+            <h1>THENGA KOLA <span class="brand-malayalam">തേങ്ങാ കൊല</span></h1>
+            <div class="dept-subtitle">തേങ്ങ വീഴും മുമ്പേ, കൊല അറിയാം</div>
+          </div>
+        </a>
+
+        <!-- Main Nav (English actions with clean badges) -->
+        <nav class="nav-menu">
+          <button class="nav-btn" data-target="scannerView">🎯 Tree Scanner</button>
+          <button class="nav-btn" data-target="undoView">🥥 Thenga Undo? & Radar</button>
+          <button class="nav-btn" data-target="recordsView">🚨 Crime Records & Most Wanted</button>
+          <button class="nav-btn" data-target="historyView">📜 Past Scans</button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- VIEW 1: HOME SCREEN -->
+    <main id="homeView" class="view-panel active">
+      <div class="card home-hero-card">
+        <div class="card-stamp">OFFICIAL DOSSIER</div>
+        <div class="hero-section-compact">
+          <div class="hero-text-content">
+            <div class="hero-tag">⚠️ KERALA PUBLIC SAFETY INITIATIVE</div>
+            <h2 class="hero-title-compact">
+              Detect Which Coconuts <br>
+              <span class="danger-text">Are Capable of Murder.</span>
+            </h2>
+            <p class="hero-desc-compact">
+              Every day, peaceful afternoon strolls and siestas under coconut palms turn into high-velocity ballistic
+              hazards. Our neural scanner analyzes drop height, mass, and cranial fracture probability before gravity
+              strikes.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-nav-to="scannerView">
+                🎯 Scan a Tree Image
+              </button>
+              <button class="btn btn-warning" data-nav-to="undoView">
+                🥥 Thenga Undo? (Self-Report)
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-mascot-box">
+            <img src="images/thenga_kola_mascot_cropped.png" alt="Thenga Kola Mascot Logo"
+              class="hero-mascot-img-compact">
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Counters (Compact & clearly fitted within 100vh on laptop) -->
+      <div class="stat-grid-compact">
+        <div class="stat-box-compact">
+          <div class="stat-num-compact">1,24,820</div>
+          <div class="stat-label-compact">Coconuts Under Surveillance</div>
+        </div>
+        <div class="stat-box-compact">
+          <div class="stat-num-compact">4,812</div>
+          <div class="stat-label-compact">Lethal Aerial Suspects</div>
+        </div>
+        <div class="stat-box-compact">
+          <div class="stat-num-compact">98,200</div>
+          <div class="stat-label-compact">Neutralized into Chutney</div>
+        </div>
+        <div class="stat-box-compact">
+          <div class="stat-num-compact">0.00%</div>
+          <div class="stat-label-compact">Government Legal Liability</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- VIEW 2: TREE SCANNER / CAPTURE VIEW -->
+    <section id="scannerView" class="view-panel">
+      <div class="card">
+        <div class="card-stamp">RADAR SCANNER</div>
+        <h2 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.25rem;">
+          Acquire Target: Coconut Bunch Scanner
+        </h2>
+        <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+          Upload a high-resolution photo of a coconut tree bunch or select a verified active surveillance sample below:
+        </p>
+
+        <div class="scanner-grid">
+          <div>
+            <div class="drop-zone" id="dropZone">
+              <div style="font-size: 2.2rem; margin-bottom: 0.4rem;">📸</div>
+              <h3 style="font-size: 1.05rem; margin-bottom: 0.2rem;">Select Tree Image</h3>
+              <p style="font-size: 0.8rem; margin-bottom: 0.75rem;">(Click to browse or drag & drop photo)</p>
+              <button class="btn btn-primary btn-sm" onclick="document.getElementById('treeFileInput').click()">Browse
+                Files</button>
+              <button class="btn btn-secondary btn-sm" id="cameraBtn" style="margin-left: 0.4rem;">Camera</button>
+              <input type="file" id="treeFileInput" accept="image/*" style="display: none;">
+            </div>
+          </div>
+
+          <div>
+            <div class="sample-drawer-title">
+              <span>Verified Test Feed (23 Samples)</span>
+              <span style="font-size: 0.75rem; color: var(--c-orange);">Click any to scan</span>
+            </div>
+            <div class="sample-grid" id="sampleGridContainer">
+              <!-- Samples list populated via JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: ANALYZING LOADING SCREEN -->
+    <section id="analyzingView" class="view-panel">
+      <div class="card analyzing-screen">
+        <div class="scan-glow"></div>
+        <div class="mascot-wrapper">
+          <img id="analyzingImgPreview" src="images/Coconut Detective Under Spotlight.png" alt="Detective Mascot"
+            class="mascot" />
+          <div class="magnifying-glass">🔍</div>
+        </div>
+        <div class="bunch-outline">
+          <div class="scan-line"></div>
+        </div>
+        <p class="analyzing-text">Analyzing your tree...</p>
+        <div class="loading-dots">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div class="scan-progress-bar">
+          <div id="scanProgressFill" class="scan-progress-fill"></div>
+        </div>
+
+        <div id="scanLogText" class="scan-log-text">
+          [RADAR] Optical surveillance telemetry in progress...
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 4: RESULTS DOSSIER -->
+    <section id="resultsView" class="view-panel">
+      <div id="resultsThreatBanner" class="threat-banner lethal">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <span id="bannerThreatIcon" style="font-size: 1.6rem;">💀</span>
+          <div>
+            <div id="bannerThreatTitle" style="font-size: 1rem; font-weight: 800;">THREAT LEVEL: LETHAL HAZARD</div>
+            <div id="bannerThreatSubtitle" style="font-size: 0.8rem;">Maintain 10m safety perimeter. Hardhat mandatory.
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <button class="btn btn-warning btn-sm" id="generateCertBtn">📜 Safety Certificate</button>
+          <button class="btn btn-primary btn-sm" data-nav-to="scannerView">🔄 Scan Another</button>
+        </div>
+      </div>
+
+      <!-- Guided Thenga Undo Prompt -->
+      <div id="undoGuidedPrompt" class="card"
+        style="display: none; background: var(--c-cream); border: 2px solid var(--c-orange); margin-bottom: 1rem; padding: 0.75rem 1rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <img src="images/Caution Coconut Construction Mascot.png"
+              style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover;" alt="Alert">
+            <div>
+              <strong style="color: var(--c-orange);">CRITICAL ACTION REQUIRED: Lethal Coconuts Detected!</strong>
+              <div style="font-size: 0.8rem; color: var(--c-green);">
+                Log this tree into the <em>Thenga Undo?</em> census for municipal harvest response.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-warning btn-sm" id="guidedUndoBtn">🥥 File in Thenga Undo</button>
+        </div>
+      </div>
+
+      <div class="results-layout">
+        <div>
+          <div class="canvas-wrapper">
+            <canvas id="detectionCanvas"></canvas>
+          </div>
+          <div style="font-size: 0.75rem; color: var(--c-cream); margin-top: 0.4rem; font-family: var(--font-mono);">
+            * Click any bounding box or list item to inspect individual threat metrics.
+          </div>
+        </div>
+
+        <div>
+          <div class="card" style="padding: 1rem;">
+            <h3 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--c-orange);">
+              Individual Coconut Dossier
+            </h3>
+            <div class="detected-items-list" id="coconutDossierList">
+              <!-- Populated via JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 5: THENGA UNDO + KERALA RADAR MERGED (Using ONLY thenga undo.png Image Banner) -->
+    <section id="undoView" class="view-panel">
+      <!-- Only thenga undo image used as prominent hero banner -->
+      <div class="undo-image-only-banner">
+        <img src="images/thenga_undo_cropped.png" alt="Thenga Undo Banner" class="undo-pure-banner-img">
+      </div>
+
+      <div class="scanner-grid" style="margin-top: 1rem;">
+        <!-- Self reporting form -->
+        <div class="card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.75rem; color: var(--c-green);">
+            📝 Self-Report Coconut Inventory
+          </h3>
+          <form id="thengaUndoForm">
+            <div class="form-group">
+              <label class="form-label" for="undoLocation">Tree Location / Landmark</label>
+              <input type="text" id="undoLocation" class="form-input"
+                placeholder="e.g. Near Changampuzha Park, Edappally" required>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+              <div class="form-group">
+                <label class="form-label" for="undoTenderCount">Tender Coconuts (Elaneer 🥥)</label>
+                <input type="number" id="undoTenderCount" class="form-input" min="0" value="5">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="undoMatureCount">Mature Dried Coconuts (🌰)</label>
+                <input type="number" id="undoMatureCount" class="form-input" min="0" value="8">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="undoReporterName">Reporting Citizen / Owner</label>
+              <input type="text" id="undoReporterName" class="form-input"
+                placeholder="Your name or 'Concerned Passerby'">
+            </div>
+            <button type="submit" class="btn btn-warning" style="width: 100%;">
+              🥥 Register Tree in Hazard Index
+            </button>
+          </form>
+        </div>
+
+        <!-- Merged Kerala District Radar -->
+        <div class="card">
+          <h3 style="font-size: 1.05rem; margin-bottom: 0.75rem; color: var(--c-orange);">
+            🗺️ Kerala District Hazard Radar
+          </h3>
+          <div class="district-list" id="keralaDistrictList">
+            <!-- Populated via JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Undo Submissions -->
+      <div class="card" style="margin-top: 1rem;">
+        <h3 style="font-size: 1rem; margin-bottom: 0.75rem; color: var(--c-green);">
+          📋 Active Citizen Census Logs
+        </h3>
+        <div id="undoReportsContainer"
+          style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem;">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 6: CRIME RECORDS & MOST WANTED MERGED -->
+    <section id="recordsView" class="view-panel">
+      <!-- Most Wanted Section at the top -->
+      <div class="card" style="margin-bottom: 1.25rem;">
+        <div style="text-align: center; margin-bottom: 1rem;">
+          <h2 style="font-size: 1.6rem; color: var(--c-orange); font-weight: 900;">
+            🚨 KERALA'S MOST WANTED COCONUTS 🚨
+          </h2>
+          <p style="font-size: 0.85rem; color: var(--c-green);">
+            Overhead suspects wanted for gravitational battery, loitering, and evasion of plucking teams.
+          </p>
+        </div>
+        <div class="wanted-grid" id="wantedCardsGrid">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+
+      <!-- Historical Incident Registry Dossier Cards (Replacing cramped table) -->
+      <div class="card">
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 0.75rem;">
+          <div>
+            <h3 style="font-size: 1.2rem; color: var(--c-green); font-weight: 800;">
+              📋 Historical Incident & Autopsy Case Files
+            </h3>
+            <p style="font-size: 0.85rem; color: var(--c-green); opacity: 0.85;">
+              Verified forensic ballistic reports and suspect post-incident custody logs across Kerala.
+            </p>
+          </div>
+          <button class="btn btn-primary btn-sm" onclick="document.getElementById('complaintViewBtn').click()">
+            🚨 File Public Complaint (FIR)
+          </button>
+        </div>
+
+        <div class="incident-dossier-grid" id="crimeDossierGrid">
+          <!-- Populated with rich case file cards via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 7: PAST SCANS -->
+    <section id="historyView" class="view-panel">
+      <div class="card">
+        <h2 style="font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--c-green);">
+          📜 Past Scans Archive
+        </h2>
+        <div id="pastScansContainer">
+          <!-- Populated via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPLAINT VIEW -->
+    <div style="display: none;"><button id="complaintViewBtn" data-nav-to="complaintSection"></button></div>
+    <section id="complaintSection" class="view-panel">
+      <div class="card" style="max-width: 540px; margin: 0 auto;">
+        <h2 style="color: var(--c-orange); font-size: 1.3rem; margin-bottom: 0.25rem;">
+          🚨 File a Suspicious Coconut Complaint (FIR)
+        </h2>
+        <p style="font-size: 0.8rem; margin-bottom: 1rem;">
+          Report aggressive dangling, intimidation, or suspicious ripening to the Quick Reaction Plucking Force.
+        </p>
+        <form id="complaintForm">
+          <div class="form-group">
+            <label class="form-label" for="compName">Complainant Name</label>
+            <input type="text" id="compName" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="compOffense">Alleged Offense</label>
+            <select id="compOffense" class="form-select">
+              <option value="Aggressive Dangling Above Walkway">Aggressive Dangling Above Walkway</option>
+              <option value="Staring Menacingly at Pedestrians">Staring Menacingly at Pedestrians</option>
+              <option value="Premeditated Fall Preparation">Premeditated Fall Preparation</option>
+              <option value="Evading the Toddy Tapper">Evading the Toddy Tapper</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="compLocation">Tree Location</label>
+            <input type="text" id="compLocation" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="compDetails">Details & Observations</label>
+            <textarea id="compDetails" class="form-textarea" rows="2"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            🚨 Submit FIR Complaint
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- SINGLE-PAGE SAFETY CERTIFICATE MODAL WITH CLOSE BUTTON -->
+  <div id="certificateModal" class="cert-modal-backdrop">
+    <div class="certificate-preview-singlepage">
+      <img src="images/Cool Sunglasses Coconut Badge.png" alt="Official Seal" class="cert-seal">
+      <h2 class="cert-title">COCONUT SAFETY CLEARANCE CERTIFICATE</h2>
+      <div class="cert-malayalam-title">തേങ്ങാ സുരക്ഷാ ക്ലിയറൻസ് സർട്ടിഫിക്കറ്റ്</div>
+
+      <div class="cert-body">
+        This is to certify that the palm cluster indexed as <strong id="certTreeId"
+          style="color: var(--c-orange);">TREE-TKD-8821</strong> has undergone complete optical, ballistic, and cranial
+        impact analysis.
+        <div
+          style="margin: 0.75rem 0; padding: 0.6rem; background: var(--c-green); color: var(--c-cream); border-radius: 6px; font-family: var(--font-mono); font-size: 0.85rem;">
+          THREAT CLASSIFICATION: <strong id="certThreatLevel">LOW HAZARD</strong><br>
+          MAX CRANIAL LETHALITY INDEX: <strong id="certLethalityScore">18/100</strong>
+        </div>
+        <p id="certStatusText" style="font-weight: 800; font-size: 0.85rem; color: var(--c-orange);">
+          CLEARED FOR OCCASIONAL SHADE & SIESTAS (STEEL HELMET RECOMMENDED)
+        </p>
+      </div>
+
+      <div class="cert-footer">
+        <div>Date: <span id="certDate">12 Sept 2026</span></div>
+        <div>Authorized By: <em>Chief Coconut Commissioner</em></div>
+      </div>
+
+      <!-- Action Buttons with Close Button -->
+      <div style="margin-top: 1.25rem; display: flex; justify-content: center; gap: 0.75rem;">
+        <button class="btn btn-primary btn-sm" id="printCertBtn">🖨️ Print / Save PDF</button>
+        <button class="btn btn-secondary btn-sm" id="closeCertBtn">✖ Close</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/scoring.js"></script>
+  <script src="js/detector.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

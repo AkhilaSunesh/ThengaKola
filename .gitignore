@@ -1,0 +1,15 @@
+# Environment Secrets
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
