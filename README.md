@@ -132,7 +132,7 @@ Open your browser and navigate to: **`http://localhost:3000`**
 *Single-page official safety clearance certificate signed by the Chief Coconut Commissioner.*
 
 ## Demo
-[![Watch the video]([https://youtube.com](https://drive.google.com/file/d/1UbBCRNWkKK9JNQy1fvibuCF95qwIBnFf/view?usp=sharing))](https://youtu.be)
+[![Watch the video]([(https://drive.google.com/file/d/1UbBCRNWkKK9JNQy1fvibuCF95qwIBnFf/view?usp=sharing)
 
 
 ---
