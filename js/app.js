@@ -142,7 +142,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Camera capture trigger (Mobile & Webcam)
   const cameraBtn = document.getElementById('cameraBtn');
   if (cameraBtn) {
-    cameraBtn.addEventListener('click', () => {
+    cameraBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
       fileInput.setAttribute('capture', 'environment');
       fileInput.click();
     });
@@ -254,6 +256,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Render Bounding Boxes on Canvas
     drawBoundingBoxes(ctx, result.detections, selectedCoconutIdx);
+
+    // Canvas Tap/Click Handler to select individual coconuts
+    canvas.onclick = (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const scaleX = canvas.width / rect.width;
+      const scaleY = canvas.height / rect.height;
+      const clickX = (e.clientX - rect.left) * scaleX;
+      const clickY = (e.clientY - rect.top) * scaleY;
+
+      const foundIdx = result.detections.findIndex(d => {
+        return clickX >= d.bbox.x && clickX <= (d.bbox.x + d.bbox.width) &&
+               clickY >= (d.bbox.y - 24) && clickY <= (d.bbox.y + d.bbox.height);
+      });
+
+      if (foundIdx !== -1) {
+        SoundEngine.playClick();
+        selectedCoconutIdx = foundIdx;
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        drawBoundingBoxes(ctx, result.detections, selectedCoconutIdx);
+        const cardItems = document.querySelectorAll('.coconut-card-item');
+        cardItems.forEach((c, i) => {
+          c.classList.toggle('selected', i === selectedCoconutIdx);
+        });
+        if (cardItems[selectedCoconutIdx]) {
+          cardItems[selectedCoconutIdx].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+    };
 
     // Render Coconuts Dossier List
     renderDossierList(result.detections, img);
